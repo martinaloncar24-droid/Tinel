@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoran Tinel</title>
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">Restaurant Tinel</a>
+
+    <!--  HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a class="active" href="index.html">Početna</a></li>
+        <li><a href="pages/menu.html">Jelovnik</a></li>
+        <li><a href="pages/about.html">O nama</a></li>
+        <li><a href="pages/contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+
+    <div class="hero-content">
+      <h1>Dobrodošli u Tinel</h1>
+      <p class="tagline">Okusi tradicije u samom srcu Zadra</p>
+
+      <p>
+        Restoran Tinel nudi autentičnu dalmatinsku kuhinju
+        pripremljenu od svježih lokalnih namirnica.
+      </p>
+
+      <a href="pages/menu.html" class="btn btn--gold">Pogledaj jelovnik</a>
+      <a href="pages/contact.html" class="btn btn--ghost">Rezerviraj stol</a>
+    </div>
+
+    <figure>
+      <img src="assets/images/restaurant.jpg" alt="Restoran">
+      <figcaption>Restoran u staroj jezgri Zadra</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ISTAKNUTA JELA -->
+<section>
+  <div class="container">
+
+    <h2>Istaknuta jela</h2>
+    <p>Naš izbor najpopularnijih jela</p>
+
+    <div class="featured-grid">
+
+      <div class="card">
+        <img src="assets/images/food2.jpg" alt="">
+        <div class="card__body">
+          <span class="badge badge--main">Glavno jelo</span>
+          <h3 class="card__title">Riblja plata</h3>
+          <p>Svježi morski specijaliteti</p>
+          <p class="card__price">28 €</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/predjelo1.jpg" alt="">
+        <div class="card__body">
+          <span class="badge badge--starter">Predjelo</span>
+          <h3 class="card__title">Juha rajčica</h3>
+          <p>Topla domaća juha</p>
+          <p class="card__price">5.50 €</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/desert1.jpg" alt="">
+        <div class="card__body">
+          <span class="badge badge--dessert">Desert</span>
+          <h3 class="card__title">Soufflé</h3>
+          <p>Topli čokoladni desert s mekanom, kremastom sredinom</p>
+          <p class="card__price">8 €</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ZAŠTO MI -->
+<section class="section-alt">
+  <div class="container">
+
+    <h2>Zašto odabrati Tinel?</h2>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-item">
+        <h3>Svježe namirnice</h3>
+        <p>Lokalni i sezonski proizvodi</p>
+      </div>
+
+      <div class="benefit-item">
+        <h3>Vrhunska usluga</h3>
+        <p>Ljubazno osoblje i atmosfera</p>
+      </div>
+
+      <div class="benefit-item">
+        <h3>Lokacija</h3>
+        <p>Stari grad Zadar</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="pages/menu.html">Jelovnik</a></li>
+        <li><a href="pages/about.html">O nama</a></li>
+        <li><a href="pages/contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2026 Restoran Tinel</p>
+    <p>Projekt izrađen u sklopu kolegija Uvod u web tehnologije — Sveučilište u Zadru.</p>
+
+  </div>
+</footer>
+
+<!--  SCRIPT -->
+<script>
+function toggleMenu() {
+  document.getElementById("nav-menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 15px 0;
+  background: var(--color-bg);
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+nav a.active,
+nav a:hover {
+  color: var(--color-primary);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #f8f1e7, #d6b98c);
+  color: #3b2a1a;
+  padding: 80px 0;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-content .tagline {
+  color: #a67c52;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 3px solid #e2c9a0;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn--gold {
+  background: var(--color-secondary);
+  color: black;
+}
+
+.btn--ghost {
+  border: 2px solid #3b2a1a;
+  color: #3b2a1a;
+  margin-left: 10px;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 0;
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+/* GRID */
+.featured-grid,
+.menu-grid,
+.benefits-grid,
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 15px;
+}
+
+.card__title {
+  color: var(--color-primary);
+}
+
+.card__price {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+/* BADGE */
+.badge {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.badge--starter { background: #fde8c8; }
+.badge--main { background: #fdd5cc; }
+.badge--dessert { background: #e8d5f5; }
+
+/* ABOUT */
+.about-layout {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-layout img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TEAM */
+.team-grid {
+  text-align: center;
+}
+
+.team-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* VIDEO */
+.video-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.video-thumb {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.video-thumb:hover {
+  transform: scale(1.05);
+}
+
+/* TABLE */
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.hours-table th {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid var(--color-border);
+  color: var(--color-primary);
+}
+
+.hours-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hours-table tr:hover {
+  background-color: rgba(0,0,0,0.03);
+}
+
+/* WINE */
+.wine-image {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wine-image img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  border: 2px solid var(--color-border);
+  transition: 0.3s;
+}
+
+.wine-image img:hover {
+  transform: scale(1.03);
+}
+
+/* FORM  FULL WIDTH + VERTICAL */
+.form-box {
+  width: 100%;
+  max-width: none;      
+  margin: 0;            
+  background: var(--color-bg);   
+  border: none;                  
+  box-shadow: none;
+  padding: 40px;
+  border-radius: 0;     
+  border: none;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box label {
+  margin-top: 10px;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+.form-box button {
+  margin-top: 10px;
+  background: var(--color-primary);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #1c0e08;
+  color: #ccc;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.site-footer nav ul {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .hero .container,
+  .about-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-grid,
+  .menu-grid,
+  .team-grid,
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBITEL */
+ @media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: row; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 15px;
+    nav a {
+  font-size: 14px;
+}
+  }
+
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .featured-grid,
+  .menu-grid,
+  .team-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILNA VERZIJA */
+@media (max-width: 768px) {
+
+  /* sakrij normalni meni */
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  /* pokaži hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* kad klikneš */
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}

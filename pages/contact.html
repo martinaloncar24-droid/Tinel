@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/components.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="../index.html">Restaurant Tinel</a>
+
+    <!--  HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="../index.html">Početna</a></li>
+        <li><a href="menu.html">Jelovnik</a></li>
+        <li><a href="about.html">O nama</a></li>
+        <li><a href="contact.html" class="active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- NASLOV + FORMA -->
+<section>
+
+  <div class="container">
+    <h1 class="page-title">Rezervacija stola</h1>
+    <p class="page-subtitle">
+      Rezervirajte stol unaprijed i osigurajte savršenu večer u restoranu Tinel.
+    </p>
+  </div>
+
+  <!--  FULL WIDTH FORMA -->
+  <div class="form-box">
+
+    <form>
+
+      <h3>Vaši podaci</h3>
+
+      <label for="ime">Ime i prezime *</label>
+      <input id="ime" type="text" placeholder="npr. Ana Lučić" required>
+
+      <label for="email">Email *</label>
+      <input id="email" type="email" placeholder="ana@example.com" required>
+
+      <label for="telefon">Telefon *</label>
+      <input id="telefon" type="text" placeholder="+385 91 123 4567" required>
+
+      <h3>Detalji rezervacije</h3>
+
+      <label for="datum">Datum *</label>
+      <input id="datum" type="date" required>
+
+      <label for="termin">Termin *</label>
+      <select id="termin">
+        <option>-- Odaberite termin --</option>
+        <option>17:00</option>
+        <option>18:00</option>
+        <option>19:00</option>
+        <option>20:00</option>
+        <option>21:00</option>
+      </select>
+
+      <label for="gosti">Broj gostiju *</label>
+      <select id="gosti">
+        <option>-- Odaberite broj --</option>
+        <option>2 osobe</option>
+        <option>3 osobe</option>
+        <option>4 osobe</option>
+        <option>5+ osoba</option>
+      </select>
+
+      <label for="napomena">Napomena</label>
+      <textarea id="napomena" placeholder="Posebni zahtjevi..."></textarea>
+
+      <button type="submit">Pošalji rezervaciju</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- KONTAKT + MAPA -->
+<section class="section-alt">
+  <div class="container contact-info">
+
+    <h2>Pronađite nas</h2>
+
+    <p><strong>Restoran Tinel</strong></p>
+
+    <p>
+      Ulica don Ive Prodana 2<br>
+      23000 Zadar
+    </p>
+
+    <p>Email: tinelbistro@gmail.com</p>
+    <p>Telefon: +385 98 9757 130</p>
+    <p>Instagram: tinel.restaurant</p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Ulica%20don%20Ive%20Prodana%202%20Zadar&output=embed"
+      width="100%" 
+      height="300" 
+      style="border:0; border-radius:10px;"
+      loading="lazy">
+    </iframe>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Početna</a></li>
+        <li><a href="menu.html">Jelovnik</a></li>
+        <li><a href="about.html">O nama</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2026 Restoran Tinel</p>
+    <p>Projekt izrađen u sklopu kolegija Uvod u web tehnologije — Sveučilište u Zadru.</p>
+
+  </div>
+</footer>
+
+<!--  SCRIPT -->
+<script>
+function toggleMenu() {
+  document.getElementById("nav-menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
